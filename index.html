@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+  <div class="page">
+    <div class="msg">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. </p>
+    </div>
+    <div class="txtbox">
+      <div class="trial">
+        <span>Try it free 7 days</span> then $20/mo. thereafter
+      </div>
+      <div class="entry">
+
+        <div class="inputbox top">
+          <input type="text" placeholder="First Name" id="firstName">
+          <div class="errimg hide"></div>
+        </div>
+        <div class="errmsg errfirst hide">
+          First Name cannot be empty
+        </div>
+
+        <div class="inputbox">
+          <input type="text" placeholder="Last Name"
+          id="lastName">
+          <div class="errimg hide"></div>
+        </div>
+        <div class="errmsg errlast hide">
+          Last Name cannot be empty
+        </div>
+
+        <div class="inputbox">
+          <input type="email"  placeholder="Email Address"  id="email">
+          <div class="errimg hide"></div>
+        </div>
+        <div class="errmsg erremail hide">
+          Looks like this is not an email
+        </div>
+
+        <div class="inputbox">
+          <input type="password"  placeholder="Password" id="password">
+          <div class="errimg hide"></div>
+        </div>
+        <div class="errmsg errpass hide">
+          Password cannot be empty
+        </div>
+
+        <div class="button">CLAIM YOUR FREE TRIAL</div>
+        <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

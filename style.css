@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+
+.page {
+    background-color: #FF7979;
+    background-image: url("images/bg-intro-desktop.png");
+    background-repeat: space; 
+    width: 85vw;
+    height: 90vh;
+    max-width: 1412px;
+    max-height: 800px;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.msg {
+    color: white;
+    margin-left: 9vw;
+    margin-right: 9vw;
+    width: 100%;
+}
+.msg h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.msg p {
+    line-height: 1.7em;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+.txtbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 9vw;
+}
+
+
+
+
+
+
+.txtbox .trial {
+    background-color: #5E54A4;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 200;
+    margin-bottom: 30px;
+    box-shadow: 0 7px 0 rgba(0, 0, 0, 0.123);
+}
+.trial span {
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+.entry {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 7px 0 rgba(0, 0, 0, 0.123);
+}
+
+
+
+
+
+.entry input {
+    width: 100%;
+    border: unset;
+    outline: unset;
+    margin-left: 10px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+.entry .top {
+    margin-top: 40px;
+}
+.inputbox {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    border-radius: 5px;
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.inputbox:focus-within {
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+.entry .button {
+    text-align: center;
+    background-color: #38CC8B;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.178);
+    ;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+
+
+
+
+
+.error {
+    border: 2px solid #FF7979;
+}
+.errimg {
+    background-image: url("images/icon-error.svg");
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.hide {
+    visibility: hidden;
+    position: fixed;
+}
+.errmsg {
+    text-align: end;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 5px;
+    font-size: 0.6em;
+    font-style: italic;
+    color: #FF7979;
+}
+
+
+
+
+
+.entry .button:hover {
+    background-color: #43e69f;
+}
+.entry p {
+    font-size: 0.7em;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 50px;
+    color: rgba(0, 0, 0, 0.418);
+}
+.entry span {
+    font-size: 1em;
+    font-weight: 600;
+    color: #FF7979;
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .page {
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .page {
+        flex-direction: column;
+        max-height: unset;
+        border-radius: unset;
+        background-image: url("images/bg-intro-mobile.png");
+        background-repeat: unset;
+    }
+    .msg {
+        margin: 0px;
+    }
+    .msg h1 {
+        font-size: 2em;
+        font-weight: 600;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 80px;
+        text-align: center;
+    }
+    .msg p {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .trial {
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .txtbox {
+        margin: 0;
+    }
+    .entry {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .entry .top {
+        margin-top: 20px;
+    }
+    .inputbox {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .entry .button {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .entry p {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+    .entry .errmsg {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
